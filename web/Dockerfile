@@ -2,7 +2,7 @@
 FROM node:14
 # 작업 디렉토리 생성
 WORKDIR /usr/app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
 # 포트 매핑
