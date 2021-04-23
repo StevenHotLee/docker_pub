@@ -6,7 +6,7 @@ RUN npm install -g pm2
 COPY . .
 
 RUN cd /usr/app/web && npm install
-RUN cd /usr/app/web2 && npm install
+RUN cd /usr/app/web2 && npm install && cd ..
 
 # RUN cd /usr/app/web && pm2 start ./bin/www --name web
 # RUN cd /usr/app/web2 && pm2 start ./bin/www --name web2
